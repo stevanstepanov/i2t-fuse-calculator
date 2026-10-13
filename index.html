@@ -41,8 +41,9 @@ canvas { width:100%; background:#111827; border-radius:10px; }
 <select id="fuse">
 <option value="f1">Fuse 1 — 2.0 A — I²t = 2.81 A²s</option>
 <option value="f2">Fuse 2 — 2.5 A — I²t = 22.2 A²s</option>
-<option value="f3">2410WFS200A125V — 2.0 A — I²t = 3.48 A²s</option>
-<option value="f4">2410WFS400A125V — 4.0 A — I²t = 3.84 A²s</option>
+<option value="f3">2410WFS200A125V — 2.0 A — I²t = 9.6 A²s</option>
+<option value="f4">2410WFS400A125V — 4.0 A — I²t = 53 A²s</option>
+<option value="f5">TA2S — 2.0 A — I²t = 12.150 A²s</option>
 </select>
 
 <div class="specs">
@@ -80,8 +81,9 @@ design verification. For a non-rectangular inrush pulse, calculate <span class="
 const FUSES={
  f1:{name:'Fuse 1', rated:2.0, i2t:2.81},
  f2:{name:'Fuse 2', rated:2.5, i2t:22.2},
- f3:{name:'2410WFS200A125V', rated:2.0, i2t:3.48},
- f4:{name:'2410WFS400A125V', rated:4.0, i2t:3.84}
+ f3:{name:'2410WFS200A125V', rated:2.0, i2t:9.6},
+ f4:{name:'2410WFS400A125V', rated:4.0, i2t:53},
+ f5:{name:'TA2S', rated:2.0, i2t:12.150}
 };
 const fuse=document.getElementById('fuse');
 const current=document.getElementById('current');
